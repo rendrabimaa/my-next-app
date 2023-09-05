@@ -5,12 +5,7 @@ import { retrieveData } from '@/lib/firebase/service';
 type Data = {
     status: boolean;
     statusCode: Number;
-    data: {
-        id: number;
-        name: string;
-        price: number;
-        size: string;
-    }[];
+    data: any;
 }
 
 export default async function handler(
