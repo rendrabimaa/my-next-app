@@ -7,13 +7,6 @@ import { fetcher } from "@/lib/swr/fetcher";
 const ProductPage = () => {
     const { push } = useRouter()
     const [products, setProducts] = useState([]);
-    const [isLogin, setIsLogin] = useState(true)
-
-    useEffect(() => {
-        if(!isLogin){
-            push('/auth/login')
-        }
-    }, [])
 
     // menggunakan library swr
     const { data, error, isLoading } = useSWR("/api/product", fetcher);
