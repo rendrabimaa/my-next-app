@@ -1,0 +1,40 @@
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    &__title {
+        size: 32px;
+        margin-bottom: 20px;
+    }
+    &__form {
+        padding: 0px 20px;
+        width: 50%;
+        box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.5);
+        &__item {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 20px auto;
+            &__input {
+                padding: 10px;
+                background-color: #eee;
+                margin-top: 5px;
+            }
+            &__button {
+                background-color: black;
+                color: white;
+                height: 50px;
+            }
+        }
+    }
+    &__link {
+        a {
+            color: #737373;
+            font-weight: bold;
+        }
+    }
+}
+
